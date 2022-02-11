@@ -8,6 +8,12 @@ import json
 from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
+def lobby(request):
+    return render(request, 'base/lobby.html')
+
+def room(request):
+    return render(request, 'base/room.html')
+    
 def getToken(request):
     appId = "YOUR APP ID"
     appCertificate = "YOUR APP CERTIFICATE"
